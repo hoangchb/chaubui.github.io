@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Typewriter Animation */
+.typewriter h1 {
+    font-size: 3em;
+    color: rgb(255, 171, 186);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 171, 186); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.8s steps(25, end),
+      blink-caret .0s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { color: transparent }
+    50% { color: rgb(255, 155, 173)}
+    100%{ color: transparent }
+  }
+
+header{
+    position:fixed;
+    right:-5px;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+header ul{
+    list-style: none;
+    top: 0;
+    right: 0;
+    padding:20px;
+    margin: 0;
+    display: flex; /* Makes the list horizational */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+header ul li{
+    text-decoration: none;
+    padding: 2.0em 0.5em; /* Adjust padding as needed */
+    position: relative;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+header ul li a {
+    color: rgb(255, 113, 137); /* Set the color of the text */
+    text-decoration: none; /* Remove underlines from links */
+  }
+
+section{
+    position: fixed;
+    bottom: 330px;
+    font-size: 2em;
+    color: rgb(21, 21, 21);
+    text-align: center;
+    margin-top: 20px;
+}
+
+section h1{
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+section h2{
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+section.icons {
+    list-style-type: none; /* Removes bullet points from list, need to sue with ul*/
+    position:fixed;
+    bottom: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+section.icons ul{
+    list-style: none;
+    top: 0;
+    right: 0;
+    padding:10px;
+    margin: 0;
+    display: flex; /* Makes the list horizational */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+section.icons ul li{
+    text-decoration: none;
+    padding: 0.3em 0.5em; /* Adjust padding as needed */
+    position: relative;
+    font-size: 30px;
+}
+
+section.icons ul li a {
+    color: rgb(255, 113, 137); /* Set the color of the text */
+    text-decoration: none; /* Remove underlines from links */
+  }
